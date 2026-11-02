@@ -470,6 +470,38 @@ address { font-style: normal; }
 
 .about-actions { display: flex; flex-wrap: wrap; gap: 14px; }
 
+/* ---------- Family photos ---------- */
+.family-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 26px;
+  align-items: stretch;
+}
+.family-photo {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+}
+.family-photo img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  object-position: center top;
+}
+.family-photo figcaption {
+  padding: 16px 22px 20px;
+  border-top: 1px solid var(--line);
+  font-family: var(--font-head);
+  font-weight: 600;
+  font-size: .97rem;
+  color: var(--navy-800);
+}
+
 /* ---------- Service area ---------- */
 .area-section { background: var(--white); }
 .area-grid {
